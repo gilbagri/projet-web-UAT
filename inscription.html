@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription - UAT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo-zone">
+        <img src="image/logopng.jfif" alt="Logo UAT">
+        <div>
+          <h1>Université Africaine des Technologies</h1>
+          <p>« Former aujourd'hui les innovateurs de demain »</p>
+        </div>
+      </div>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger" aria-label="Afficher le menu"><span></span><span></span><span></span></label>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="formations.html">Formations</a>
+        <a href="actualites.html">Actualités</a>
+        <a href="inscription.html" aria-current="page">Inscription</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h2>Formulaire d'inscription</h2>
+    <form>
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="prenom">Prénom :</label>
+      <input type="text" id="prenom" name="prenom" required>
+
+      <label for="naissance">Date de naissance :</label>
+      <input type="date" id="naissance" name="naissance" required>
+
+      <label>Sexe :</label>
+      <input type="radio" name="sexe" value="masculin"> Masculin
+      <input type="radio" name="sexe" value="feminin"> Féminin
+
+      <label for="adresse">Adresse :</label>
+      <input type="text" id="adresse" name="adresse">
+
+      <label for="ville">Ville :</label>
+      <input type="text" id="ville" name="ville">
+
+      <label for="tel">Téléphone :</label>
+      <input type="tel" id="tel" name="telephone">
+
+      <label for="email">Adresse électronique :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="formation">Formation souhaitée :</label>
+      <select id="formation" name="formation">
+        <option>-- Sélectionner une formation --</option>
+        <option>Licence Informatique</option>
+        <option>Licence Mathématiques</option>
+        <option>Licence Data Science</option>
+        <option>Licence Réseaux</option>
+        <option>Master Intelligence Artificielle</option>
+      </select>
+
+      <label>Niveau d'étude :</label>
+      <input type="radio" name="niveau" value="L1"> Licence 1
+      <input type="radio" name="niveau" value="L2"> Licence 2
+      <input type="radio" name="niveau" value="L3"> Licence 3
+      <input type="radio" name="niveau" value="M1"> Master 1
+      <input type="radio" name="niveau" value="M2"> Master 2
+
+      <label>Langues parlées :</label>
+      <input type="checkbox" name="langue" value="francais"> Français
+      <input type="checkbox" name="langue" value="anglais"> Anglais
+      <input type="checkbox" name="langue" value="fon"> Fon
+      <input type="checkbox" name="langue" value="yoruba"> Yoruba
+      <input type="checkbox" name="langue" value="baatonum"> Baatonum
+
+      <label for="motivation">Lettre de motivation :</label>
+      <textarea id="motivation" name="motivation" rows="5" placeholder="Expliquez votre choix de formation..."></textarea>
+
+      <label for="mdp">Mot de passe :</label>
+      <input type="password" id="mdp" name="mdp" required>
+
+      <label for="mdp2">Confirmation du mot de passe :</label>
+      <input type="password" id="mdp2" name="mdp2" required>
+
+      <input type="submit" value="Envoyer">
+      <input type="reset" value="Réinitialiser">
+    </form>
+  </main>
+  <footer><p>© 2026 Université Africaine des Technologies - contact@uat.edu</p></footer>
+</body>
+</html>
